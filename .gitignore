@@ -4,12 +4,16 @@
 /web-app/WEB-INF
 
 # IDE support files
+classes/
+test-classes/
+.DS_Store
 /.classpath
 /.launch
 /.project
 /.settings
 /*.launch
 /*.tmproj
+/out/**
 /ivy*
 /eclipse
 
@@ -23,6 +27,7 @@
 # logs
 /stacktrace.log
 /test/reports
+Servers/
 /logs
 
 # project release file
@@ -38,6 +43,9 @@
 
 # "temporary" build files
 /target
+/*.idea
+*.iml
+workspace.xml
 
 # other
 *.iws
