@@ -42,9 +42,14 @@ class RatioTestTests {
         def result = rManyDigits.decimalValue(6, Rounding.UP);
         assertEquals(new BigDecimal("3.000334"), result);
     }
-//        result = rManyDigits.decimalValue(7, Rounding.UP);
-//        assertEquals(new BigDecimal("3.0003334"), result);
-//
+
+    @Test
+    void shouldReturnProperNumberWhenRoundingUpToSevenDecimalPlaces() {
+        def rManyDigits = Ratio.of(new BigDecimal("9.001"), new BigDecimal(3));
+        def result = rManyDigits.decimalValue(7, Rounding.UP);
+        assertEquals(new BigDecimal("3.0003334"), result);
+    }
+
 //        result = rManyDigits.decimalValue(7, Rounding.HALF_UP);
 //        assertEquals(new BigDecimal("3.0003333"), result);
 }
