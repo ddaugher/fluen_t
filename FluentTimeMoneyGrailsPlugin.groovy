@@ -1,8 +1,8 @@
-class @plugin.name@GrailsPlugin {
+class FluentTimeMoneyGrailsPlugin {
     // the plugin version
-    def version = "@plugin.version@"
+    def version = "0.1"
     // the version or versions of Grails the plugin is designed for
-    def grailsVersion = "1.3.7 > *"
+    def grailsVersion = "2.2.0 > *"
     // the other plugins this plugin depends on
     def dependsOn = [:]
     // resources that are excluded from plugin packaging
@@ -10,13 +10,10 @@ class @plugin.name@GrailsPlugin {
             "grails-app/views/error.gsp"
     ]
 
-    // TODO Fill in these fields
-    def author = "Your name"
-    def authorEmail = ""
-    def title = "Plugin summary/headline"
-    def description = '''\\
-Brief description of the plugin.
-'''
+    def author = "DJ Daugherty"
+    def authorEmail = "ddaugher@gmail.com"
+    def title = "fluent time and money"
+    def description = "something here"
 
     // URL to the plugin's documentation
     def documentation = "http://grails.org/plugin/@plugin.short.name@"
