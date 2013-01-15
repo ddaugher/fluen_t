@@ -50,6 +50,10 @@ class RatioTestTests {
         assertEquals(new BigDecimal("3.0003334"), result);
     }
 
-//        result = rManyDigits.decimalValue(7, Rounding.HALF_UP);
-//        assertEquals(new BigDecimal("3.0003333"), result);
+    @Test
+    void shouldReturnProperNumberWhenRoundingHalfUpToSevenDecimalPlaces() {
+        def rManyDigits = Ratio.of(new BigDecimal("9.001"), new BigDecimal(3));
+        def result = rManyDigits.decimalValue(7, Rounding.HALF_UP);
+        assertEquals(new BigDecimal("3.0003333"), result);
+    }
 }
